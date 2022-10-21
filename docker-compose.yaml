@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: /home/looizao/projects/FC3-admin-catalogo-de-videos-python/
+    image: django-scaled
+    container_name: django-scaled-app
+    command: ./.docker/entrypoint.sh
+    volumes:
+      - .:/home/python/app
