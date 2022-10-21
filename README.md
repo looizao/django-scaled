@@ -6,3 +6,7 @@
 
 ## run a test
 `python -m unittest category.tests.unit.domain.test_entities`
+
+
+Aula que começa a intalar o devcontainers:
+Habilitando a extensão Remote Container no projeto
