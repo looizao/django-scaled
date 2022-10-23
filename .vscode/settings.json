@@ -1,9 +1,12 @@
 {
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": false,
     "python.linting.pylintPath": "pylint",
     "python.linting.pylintArgs": [
-        "--disable=C0111"
+        "--disable=C0111,C0115",
+        "--disable=C0115",
+        "--disable=missing-class-docstring",
+        "--disable=missing-function-docstring"
     ],
     "python.autoComplete.extraPaths": [
         "${workspaceFolder}/__pypackages__/3.10/lib"
@@ -14,8 +17,7 @@
     "python.testing.pytestArgs": [
         "src",
         "--ignore",
-        "__pypackages__",
-        "-s"
+        "__pypackages__"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
